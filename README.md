@@ -17,7 +17,7 @@ Below is the circuit diagram of the project for a better understanding of the ha
 ## Conceptual Flow
 The conceptual flow diagram showcases the workflow of the robotic system:
 
-![Conceptual Flow](images/conceptual-flow-image.png)
+![Conceptual Flow](cflow.PNG)
 
 ---
 
