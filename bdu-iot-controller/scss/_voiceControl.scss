@@ -1,0 +1,19 @@
+@use "./config/forward" as *;
+#voiceControlPanel {
+    .row {
+        margin-bottom: 32px;
+    }
+    .listening {
+        margin: auto;
+        width: fit-content;
+        display: none;
+        svg {
+            fill: $blue;
+        }
+    }
+    .startSreakingBtn {
+        @include my-btn(b);
+        margin: auto;
+        display: block;
+    }
+} //#voiceControlPanel

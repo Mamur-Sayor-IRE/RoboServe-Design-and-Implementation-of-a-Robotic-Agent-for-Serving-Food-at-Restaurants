@@ -1,0 +1,33 @@
+@use "./config/forward" as *;
+#secondPanel {
+    padding-top: 99px+32px;
+    .h1 {
+        @include flex(ucr);
+        padding: 0 32px;
+        margin-bottom: 24px;
+        gap: 16px;
+        .txt {
+            @include ff-gsm;
+            font-size: $fs-24;
+        }
+        svg {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .block {
+        @include flex(sbcr);
+        padding: 32px;
+        border-bottom: 1px solid $border-gray;
+        &:hover {
+            background: $l-blue-2;
+            cursor: pointer;
+        }
+        svg {
+            width: 40px;
+            height: 40px;
+        }
+    } //.block
+}
+
+//#secondPanel

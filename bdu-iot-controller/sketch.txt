@@ -1,0 +1,109 @@
+
+#include <WiFi.h>
+#include <HTTPClient.h>
+
+const char WIFI_SSID[] = "Bitta Boibhob";
+const char WIFI_PASSWORD[] = "wwwwwwww";
+
+String HOST_NAME = "http://192.168.178.22";  // change to your PC's IP address
+String PATH_NAME = "/gyroscope-controlled-robot/xyz-values.txt";
+
+HTTPClient http;
+int exec = 0;
+
+// int enA = 9;
+int IN1 = 16; // forward
+int IN2 = 17; // backward
+int IN3 = 18; // forward
+int IN4 = 19; // backward
+
+void setup() {
+    Serial.begin(115200);
+  // pinMode(enA, OUTPUT);
+  pinMode(IN1, OUTPUT);
+  pinMode(IN2, OUTPUT);
+  pinMode(IN3, OUTPUT);
+  pinMode(IN4, OUTPUT);
+
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, LOW);
+  digitalWrite(IN3, LOW);
+  digitalWrite(IN4, LOW);
+
+  WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
+  Serial.println("Connecting");
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  Serial.println("");
+  Serial.print("Connected to WiFi network with IP Address: ");
+  Serial.println(WiFi.localIP());
+
+  http.begin(HOST_NAME + PATH_NAME);
+  int httpCode = http.GET();
+
+  if (httpCode > 0)  // httpCode will be negative on error
+  {
+    if (httpCode == HTTP_CODE_OK)  // file found at server
+    {
+      exec = 1;
+      // String payload = http.getString();
+      // Serial.println(payload);
+    } else Serial.printf("[HTTP] GET... code: %d\n", httpCode);
+  } else Serial.printf("[HTTP] GET... failed, error: %s\n", http.errorToString(httpCode).c_str());
+
+  // http.end();
+}
+
+void loop() {
+  Serial.println("");
+  if (exec == 1) {
+    http.begin(HOST_NAME + PATH_NAME);
+    int httpCode = http.GET();
+    String payload = http.getString();
+    Serial.println(payload);
+    if(payload=="F") forward();
+    if(payload=="B") reverse();
+    if(payload=="L") left();
+    if(payload=="R") right();
+    if(payload=="S") stop();
+  }
+  delay(50);
+}
+
+void forward() {
+  digitalWrite(IN1, HIGH);
+  digitalWrite(IN2, LOW);
+  digitalWrite(IN3, HIGH);
+  digitalWrite(IN4, LOW);
+}
+
+void reverse() {
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, HIGH);
+  digitalWrite(IN3, LOW);
+  digitalWrite(IN4, HIGH);
+}
+
+void left() {
+  digitalWrite(IN1, HIGH);
+  digitalWrite(IN2, LOW);
+  digitalWrite(IN3, LOW);
+  digitalWrite(IN4, HIGH);
+}
+
+void right() {
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, HIGH);
+  digitalWrite(IN3, HIGH);
+  digitalWrite(IN4, LOW);
+}
+
+void stop() {
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, LOW);
+  digitalWrite(IN3, LOW);
+  digitalWrite(IN4, LOW);
+}

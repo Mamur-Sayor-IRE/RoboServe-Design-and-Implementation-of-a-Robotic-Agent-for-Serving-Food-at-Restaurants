@@ -1,0 +1,1193 @@
+@font-face {
+  font-family: "Heebo";
+  src: url("../res/font/Heebo.ttf");
+}
+@font-face {
+  font-family: "Arial";
+  src: url("../res/font/Arial.ttf");
+}
+@font-face {
+  font-family: "Product sans";
+  src: url("../res/font/Product-sans.ttf");
+}
+@font-face {
+  font-family: "Product sans light";
+  src: url("../res/font/Product-sans-light.ttf");
+}
+@font-face {
+  font-family: "Google sans";
+  src: url("../res/font/Google-sans.woff2");
+}
+@font-face {
+  font-family: "Google sans medium";
+  src: url("../res/font/Google-sans-medium.woff2");
+}
+@font-face {
+  font-family: "Segoe UI Variable Text";
+  src: url("../res/font/Segoe UI Variable Text.ttf");
+}
+@font-face {
+  font-family: "Segoe UI Variable Display";
+  src: url("../res/font/Segoe UI Variable Display.ttf");
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../res/font/Segoe UI.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../res/font/Roboto.ttf");
+}
+/*
+-- Defined by : Bitta Boibhob.
+-- Created at : Thu, 4:21 pm, 11 Aug 2022
+*/
+/*
+-- Defined by : Bitta Boibhob.
+-- Created at : Tue, 9:10 am, 16 Aug 2022
+*/
+/*
+        -- modal-z-index
+-- ff-ps
+-- absolute-center
+-- absolute-top
+-- scroll-bar-hidden
+-- my-scroll-bar($width)
+-- in-placeholder-opacity
+-- in-datetime-opacity
+-- opacity($val)
+-- svg-hover-old
+-- svg-hover
+-- hypertxt-b
+-- hypertxt-b2
+-- hypertxt-r2
+-- hypertxt-o2
+-- menu
+-- overflow-text($width, $val)
+-- my-btn($color)
+-- txt-loading
+-- btn-loading
+-- in-num-icon-opacity
+-- cursor-pointer
+-- p-preloader
+-- c-preloader
+-- input-box($c)
+-- input-box-2($c)
+-- txt-blink($color)
+-- animate-shiny($t)
+-- bx-sh-outset
+-- primary-indeterminate-translate
+-- primary-indeterminate-scale
+-- auxiliary-indeterminate-translate
+-- auxiliary-indeterminate-scale
+-- menu-3dot
+-- menu-3dot-blue
+-- menu-3dot-gray
+-- switch-checkbox
+-- flex($val)
+-- icon-selectbox
+-- text-formatting
+-- toggleButton2
+*/
+/* **************************************** */
+/* **************************************** */
+/* **************************************** */
+/* **************************************** */
+/* **************************************** */
+/* **************************************** */
+/* **************************************** */
+/* **************************************** */
+/* **************************************** */
+/* **************************************** */
+/* **************************************** */
+/* **************************************** */
+/* **************************************** */
+/* **************************************** */
+@keyframes primary-indeterminate-translate {
+  0% {
+    transform: translateX(-145.166611%);
+  }
+  20% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.701732, 0.495819);
+    transform: translateX(-145.166611%);
+  }
+  59.15% {
+    animation-timing-function: cubic-bezier(0.302435, 0.381352, 0.55, 0.956352);
+    transform: translateX(-61.495191%);
+  }
+  to {
+    /* transform: translateX(55.444446%) */
+    transform: translateX(100%);
+  }
+}
+@keyframes primary-indeterminate-scale {
+  0% {
+    transform: scaleX(0.08);
+  }
+  36.65% {
+    animation-timing-function: cubic-bezier(0.334731, 0.12482, 0.785844, 1);
+    transform: scaleX(0.08);
+  }
+  69.15% {
+    animation-timing-function: cubic-bezier(0.06, 0.11, 0.6, 1);
+    transform: scaleX(0.661479);
+  }
+  to {
+    transform: scaleX(0.08);
+  }
+}
+@keyframes auxiliary-indeterminate-translate {
+  0% {
+    animation-timing-function: cubic-bezier(0.15, 0, 0.515058, 0.409685);
+    /* transform: translateX(-54.888891%) */
+    transform: translateX(-100.888891%);
+  }
+  25% {
+    animation-timing-function: cubic-bezier(0.31033, 0.284058, 0.8, 0.733712);
+    transform: translateX(-17.236978%);
+  }
+  48.35% {
+    animation-timing-function: cubic-bezier(0.4, 0.627035, 0.6, 0.902026);
+    transform: translateX(29.497274%);
+  }
+  to {
+    transform: translateX(105.388891%);
+  }
+}
+@keyframes auxiliary-indeterminate-scale {
+  0% {
+    animation-timing-function: cubic-bezier(0.205028, 0.057051, 0.57661, 0.453971);
+    transform: scaleX(0.08);
+  }
+  19.15% {
+    animation-timing-function: cubic-bezier(0.152313, 0.196432, 0.648374, 1.004315);
+    transform: scaleX(0.457104);
+  }
+  44.15% {
+    animation-timing-function: cubic-bezier(0.257759, 0.003163, 0.211762, 1.38179);
+    transform: scaleX(0.72796);
+  }
+  to {
+    transform: scaleX(0.08);
+  }
+}
+/* **************************************** */
+/* **************************************** */
+/* **************************************** */
+/* **************************************** */
+/* **************************************** */
+/* **************************************** */
+/* **************************************** */
+/* **************************************** */
+/* **************************************** */
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  font-family: Arial;
+  font-size: 18px;
+  cursor: context-menu;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  cursor: context-menu;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  cursor: context-menu;
+}
+
+blockquote,
+q {
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  quotes: none;
+  cursor: context-menu;
+}
+blockquote:before, blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+button,
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+}
+
+textarea {
+  line-height: 1.5;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  font-family: inherit;
+  cursor: context-menu;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+}
+table tr,
+table th,
+table td {
+  text-align: left;
+  vertical-align: middle;
+  cursor: context-menu;
+  font-size: inherit;
+  letter-spacing: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #BFBFBF;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6c757d;
+}
+
+/*
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+*/
+#firstPanel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+#firstPanel .xampp-configuration {
+  transform: translateY(-100px);
+}
+#firstPanel .xampp-configuration .xampp-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+#firstPanel .xampp-configuration .xampp-icon img {
+  width: 40px;
+  height: auto;
+}
+#firstPanel .xampp-configuration .xampp-icon .txt {
+  font-family: "Google sans medium";
+  letter-spacing: 0.15px;
+  font-size: 18px;
+  font-size: 30px;
+  color: #fd7e14;
+}
+#firstPanel .xampp-configuration .inputbox {
+  position: relative;
+  margin-bottom: 48px;
+}
+#firstPanel .xampp-configuration .inputbox label {
+  position: absolute;
+  top: 18px;
+  left: 10px;
+  background: transparent;
+  padding: 0 4px;
+  transition: all 0.1s ease-in-out;
+  pointer-events: none;
+  color: #737373;
+}
+#firstPanel .xampp-configuration .inputbox input {
+  width: calc(100% - 22px);
+  padding: 18px 12px;
+  border: 1px solid #6c757d;
+  border-radius: 4px;
+}
+#firstPanel .xampp-configuration .inputbox input[placeholder]::-webkit-input-placeholder {
+  opacity: 0;
+}
+#firstPanel .xampp-configuration .inputbox input[placeholder]:focus::-webkit-input-placeholder {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+#firstPanel .xampp-configuration .inputbox input:focus {
+  border: 2px solid #fd7e14;
+  padding: 17px 11px;
+}
+#firstPanel .xampp-configuration .inputbox input:focus + label {
+  background: white;
+  top: -10px;
+  color: #fd7e14;
+  font-size: 14px;
+}
+#firstPanel .xampp-configuration .inputbox input:valid + label {
+  background: white;
+  top: -10px;
+  font-size: 14px;
+}
+#firstPanel .xampp-configuration .connect-btn .btn {
+  padding: 10px 16px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 4px;
+  font-family: "Product sans light";
+  letter-spacing: 1.2px;
+  font-size: 17px;
+  font-weight: bold;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background: #fd7e14;
+  color: white;
+}
+#firstPanel .xampp-configuration .connect-btn .btn:hover {
+  background: #e06500;
+}
+#firstPanel .xampp-configuration .connect-btn .btn.disable {
+  padding: 10px 16px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 4px;
+  font-family: "Product sans light";
+  letter-spacing: 1.2px;
+  font-size: 17px;
+  font-weight: bold;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background: #E0E0E0;
+  color: #6c757d;
+  cursor: default;
+}
+#firstPanel .xampp-configuration .connect-btn .btn-loading {
+  background: #E0E0E0;
+  color: #6c757d;
+  border-radius: 6px;
+  padding: 8px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 8px;
+  font-family: "Product sans light";
+  letter-spacing: 1.2px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: default;
+  display: none;
+}
+#firstPanel .xampp-configuration .connect-btn .btn-loading > .c-preloader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-bottom: 16px;
+}
+#firstPanel .xampp-configuration .connect-btn .btn-loading > .c-preloader .loader {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 4px;
+}
+#firstPanel .xampp-configuration .connect-btn .btn-loading > .c-preloader .circular-loader {
+  animation: rotate 2s linear infinite;
+}
+#firstPanel .xampp-configuration .connect-btn .btn-loading > .c-preloader .loader-path {
+  fill: none;
+  stroke-width: 5px;
+  animation: animate-stroke 1.5s ease-in-out infinite;
+  stroke-linecap: round;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate-stroke {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    stroke: red;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35;
+    stroke: #007bff;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124;
+    stroke: #28a745;
+  }
+}
+#firstPanel .xampp-configuration .connect-btn .btn-loading > .c-preloader {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 0;
+}
+#firstPanel .xampp-configuration .connect-btn .btn-loading > .c-preloader .loader {
+  width: 22px;
+  height: 22px;
+  padding: 0;
+}
+#firstPanel .xampp-configuration .connect-btn .btn-loading > .c-preloader .loader .loader-path {
+  animation: animate-stroke-2 1.5s ease-in-out infinite;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate-stroke-2 {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    stroke: #6c757d;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35;
+    stroke: #6c757d;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124;
+    stroke: #6c757d;
+  }
+}
+
+#secondPanel {
+  padding-top: 131px;
+}
+#secondPanel .h1 {
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 0 32px;
+  margin-bottom: 24px;
+  gap: 16px;
+}
+#secondPanel .h1 .txt {
+  font-family: "Google sans medium";
+  letter-spacing: 0.15px;
+  font-size: 18px;
+  font-size: 24px;
+}
+#secondPanel .h1 svg {
+  width: 40px;
+  height: 40px;
+}
+#secondPanel .block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 32px;
+  border-bottom: 1px solid #dadce0;
+}
+#secondPanel .block:hover {
+  background: #F1F3F9;
+  cursor: pointer;
+}
+#secondPanel .block svg {
+  width: 40px;
+  height: 40px;
+}
+
+#buttonControlPanel .directions {
+  width: 341px;
+  height: 336px;
+  overflow: hidden;
+  position: relative;
+  margin: 40px auto;
+}
+#buttonControlPanel .directions .stop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  font-family: "Google sans medium";
+  letter-spacing: 0.15px;
+  font-size: 18px;
+  border: 3px solid black;
+  border-radius: 50%;
+  padding: 40px 24px;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 32px;
+  background: white;
+}
+#buttonControlPanel .directions .stop:hover {
+  color: #007bff;
+  border-color: #007bff;
+}
+#buttonControlPanel .directions svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+}
+#buttonControlPanel .directions svg:hover {
+  fill: #007bff;
+}
+#buttonControlPanel .directions .up {
+  top: 0;
+  left: 122px;
+}
+#buttonControlPanel .directions .down {
+  top: 236px;
+  left: 122px;
+  rotate: 180deg;
+}
+#buttonControlPanel .directions .right {
+  top: 118px;
+  left: 244px;
+  rotate: 90deg;
+  z-index: 2;
+}
+#buttonControlPanel .directions .right:hover {
+  fill: #007bff;
+}
+#buttonControlPanel .directions .left {
+  top: 118px;
+  left: 0;
+  rotate: -90deg;
+}
+
+#voiceControlPanel .row {
+  margin-bottom: 32px;
+}
+#voiceControlPanel .listening {
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: none;
+}
+#voiceControlPanel .listening svg {
+  fill: #007bff;
+}
+#voiceControlPanel .startSreakingBtn {
+  padding: 10px 16px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 4px;
+  font-family: "Product sans light";
+  letter-spacing: 1.2px;
+  font-size: 17px;
+  font-weight: bold;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  margin: auto;
+  display: block;
+}
+#voiceControlPanel .startSreakingBtn:hover {
+  background: #0069da;
+}
+
+#tableSelectionPanel .tableContainer {
+  -moz-column-count: 2;
+       column-count: 2;
+  gap: 32px;
+  padding: 32px;
+}
+#tableSelectionPanel .tableContainer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 100px;
+  background: #E8F0FE;
+  margin-bottom: 32px;
+  border-radius: 8px;
+}
+
+#chatWithRobotPanel .allMessageContainer {
+  width: 100%;
+  padding-top: 32px;
+  height: 74.8%;
+  overflow: overlay;
+}
+#chatWithRobotPanel .allMessageContainer .block {
+  display: flex;
+  justify-content: unset;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  gap: 16px;
+  padding: 0 32px 32px;
+}
+#chatWithRobotPanel .allMessageContainer .block img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+#chatWithRobotPanel .allMessageContainer .block .msg {
+  width: 87%;
+  transform: translateY(-28px);
+}
+#chatWithRobotPanel .allMessageContainer .block .msg .txt1 {
+  color: #6c757d;
+  font-family: "Arial";
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+#chatWithRobotPanel .allMessageContainer .block .msg .txt1.left {
+  text-align: left;
+}
+#chatWithRobotPanel .allMessageContainer .block .msg .txt1.right {
+  text-align: right;
+}
+#chatWithRobotPanel .allMessageContainer .block .msg .txt2 {
+  padding: 16px;
+  border-radius: 6px;
+  background: #007bff;
+  color: white;
+  font-family: "Arial";
+  font-size: 18px;
+  font-weight: normal;
+  width: 100%;
+  white-space: pre-wrap;
+  line-height: 1.3;
+}
+#chatWithRobotPanel .msgSentSection {
+  background: #F1F3F9;
+  padding: 32px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 190px;
+}
+#chatWithRobotPanel .msgSentSection .btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+#chatWithRobotPanel .msgSentSection .btns .btn {
+  padding: 12px 24px;
+  border: 2px solid #6c757d;
+  border-radius: 20px;
+  font-family: "Arial";
+  font-size: 18px;
+  font-weight: normal;
+}
+#chatWithRobotPanel .msgSentSection .btns .btn:hover {
+  background: #007bff;
+  cursor: pointer;
+  color: white;
+  border-color: white;
+}
+#chatWithRobotPanel .msgSentSection .listening {
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 48px;
+  zoom: 0.4;
+  display: none;
+}
+#chatWithRobotPanel .msgSentSection .listening svg {
+  fill: #007bff;
+}
+#chatWithRobotPanel .msgSentSection .startSreakingBtn {
+  padding: 10px 16px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 4px;
+  font-family: "Product sans light";
+  letter-spacing: 1.2px;
+  font-size: 17px;
+  font-weight: bold;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  margin: auto;
+  display: block;
+  margin-top: 24px;
+}
+#chatWithRobotPanel .msgSentSection .startSreakingBtn:hover {
+  background: #0069da;
+}
+
+#viewOrderPanel .container .block {
+  padding: 24px;
+  margin: 0 24px 24px;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 2px 6px 2px rgba(60, 64, 67, 0.15);
+  margin-bottom: 24px;
+}
+#viewOrderPanel .container .block .h1 {
+  font-family: "Google sans medium";
+  letter-spacing: 0.15px;
+  font-size: 18px;
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+#viewOrderPanel .container .block table tr td,
+#viewOrderPanel .container .block table tr th {
+  padding: 8px;
+  border: 2px solid #dadce0;
+}
+#viewOrderPanel .container .block .btn {
+  padding: 10px 16px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 4px;
+  font-family: "Product sans light";
+  letter-spacing: 1.2px;
+  font-size: 17px;
+  font-weight: bold;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+}
+#viewOrderPanel .container .block .btn:hover {
+  background: #0069da;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: lightblue;
+  overflow: hidden;
+}
+body *,
+body div,
+body p,
+body span {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+body #topRefreshIcon {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  background: white;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 2px 6px 2px rgba(60, 64, 67, 0.15);
+  padding: 8px;
+  border-radius: 50%;
+  display: none;
+}
+body #rootFrame {
+  width: 550px;
+  height: 1183px;
+  height: 1106px;
+  height: 1126px;
+  background: white;
+  position: relative;
+}
+body #rootFrame .fullWidthPanel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  scale: 0.8;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
+}
+body #rootFrame .fullWidthPanel::-webkit-scrollbar {
+  display: none;
+}
+body #rootFrame .fullWidthPanel.visible {
+  scale: 1;
+  opacity: 1;
+  pointer-events: all;
+}
+body .fullWidthPanel nav {
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+}
+body .fullWidthPanel nav img {
+  width: 100px;
+  height: auto;
+}
+body .fullWidthPanel nav p {
+  font-family: "Google sans medium";
+  letter-spacing: 0.15px;
+  font-size: 18px;
+  color: #D32F2F;
+  font-size: 30px;
+}
+body #gestureControlPanel header,
+body #buttonControlPanel header,
+body #voiceControlPanel header,
+body #tableSelectionPanel header,
+body #chatWithRobotPanel header,
+body #viewOrderPanel header {
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 16px;
+  padding: 24px;
+}
+body #gestureControlPanel header svg,
+body #buttonControlPanel header svg,
+body #voiceControlPanel header svg,
+body #tableSelectionPanel header svg,
+body #chatWithRobotPanel header svg,
+body #viewOrderPanel header svg {
+  width: 40px;
+  height: 40px;
+}
+body #gestureControlPanel header .txt,
+body #buttonControlPanel header .txt,
+body #voiceControlPanel header .txt,
+body #tableSelectionPanel header .txt,
+body #chatWithRobotPanel header .txt,
+body #viewOrderPanel header .txt {
+  font-family: "Google sans medium";
+  letter-spacing: 0.15px;
+  font-size: 18px;
+  font-size: 26px;
+}
+body #gestureControlPanel .row,
+body #buttonControlPanel .row,
+body #voiceControlPanel .row,
+body #tableSelectionPanel .row,
+body #chatWithRobotPanel .row,
+body #viewOrderPanel .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 24px 32px;
+  border-bottom: 1px solid #dadce0;
+}
+body #gestureControlPanel .row .toggleButtonCover,
+body #buttonControlPanel .row .toggleButtonCover,
+body #voiceControlPanel .row .toggleButtonCover,
+body #tableSelectionPanel .row .toggleButtonCover,
+body #chatWithRobotPanel .row .toggleButtonCover,
+body #viewOrderPanel .row .toggleButtonCover {
+  position: relative;
+  transform: translateX(-75px);
+}
+body #gestureControlPanel .row .buttonCover:before,
+body #buttonControlPanel .row .buttonCover:before,
+body #voiceControlPanel .row .buttonCover:before,
+body #tableSelectionPanel .row .buttonCover:before,
+body #chatWithRobotPanel .row .buttonCover:before,
+body #viewOrderPanel .row .buttonCover:before {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #d7e3e3;
+  font-size: 16px;
+  line-height: 1;
+  padding: 5px;
+}
+body #gestureControlPanel .row .buttonCover .button,
+body #buttonControlPanel .row .buttonCover .button,
+body #voiceControlPanel .row .buttonCover .button,
+body #tableSelectionPanel .row .buttonCover .button,
+body #chatWithRobotPanel .row .buttonCover .button,
+body #viewOrderPanel .row .buttonCover .button {
+  position: relative;
+  width: 74px;
+  height: 36px;
+  margin: -20px auto 0 auto;
+  overflow: hidden;
+}
+body #gestureControlPanel .row .buttonCover .button, body #gestureControlPanel .row .buttonCover .button .layer,
+body #buttonControlPanel .row .buttonCover .button,
+body #buttonControlPanel .row .buttonCover .button .layer,
+body #voiceControlPanel .row .buttonCover .button,
+body #voiceControlPanel .row .buttonCover .button .layer,
+body #tableSelectionPanel .row .buttonCover .button,
+body #tableSelectionPanel .row .buttonCover .button .layer,
+body #chatWithRobotPanel .row .buttonCover .button,
+body #chatWithRobotPanel .row .buttonCover .button .layer,
+body #viewOrderPanel .row .buttonCover .button,
+body #viewOrderPanel .row .buttonCover .button .layer {
+  border-radius: 100px;
+}
+body #gestureControlPanel .row .buttonCover .button .checkbox,
+body #buttonControlPanel .row .buttonCover .button .checkbox,
+body #voiceControlPanel .row .buttonCover .button .checkbox,
+body #tableSelectionPanel .row .buttonCover .button .checkbox,
+body #chatWithRobotPanel .row .buttonCover .button .checkbox,
+body #viewOrderPanel .row .buttonCover .button .checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+body #gestureControlPanel .row .buttonCover .button .knobs,
+body #buttonControlPanel .row .buttonCover .button .knobs,
+body #voiceControlPanel .row .buttonCover .button .knobs,
+body #tableSelectionPanel .row .buttonCover .button .knobs,
+body #chatWithRobotPanel .row .buttonCover .button .knobs,
+body #viewOrderPanel .row .buttonCover .button .knobs {
+  z-index: 2;
+}
+body #gestureControlPanel .row .buttonCover .button .layer,
+body #buttonControlPanel .row .buttonCover .button .layer,
+body #voiceControlPanel .row .buttonCover .button .layer,
+body #tableSelectionPanel .row .buttonCover .button .layer,
+body #chatWithRobotPanel .row .buttonCover .button .layer,
+body #viewOrderPanel .row .buttonCover .button .layer {
+  width: 100%;
+  background-color: #fcebeb;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+body #gestureControlPanel .row .buttonCover .button .knobs:before,
+body #buttonControlPanel .row .buttonCover .button .knobs:before,
+body #voiceControlPanel .row .buttonCover .button .knobs:before,
+body #tableSelectionPanel .row .buttonCover .button .knobs:before,
+body #chatWithRobotPanel .row .buttonCover .button .knobs:before,
+body #viewOrderPanel .row .buttonCover .button .knobs:before {
+  content: "OFF";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 20px;
+  height: 10px;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  padding: 9px 4px;
+  background-color: #f44336;
+  border-radius: 50%;
+  transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+}
+body #gestureControlPanel .row .buttonCover .button .checkbox:active + .knobs:before,
+body #buttonControlPanel .row .buttonCover .button .checkbox:active + .knobs:before,
+body #voiceControlPanel .row .buttonCover .button .checkbox:active + .knobs:before,
+body #tableSelectionPanel .row .buttonCover .button .checkbox:active + .knobs:before,
+body #chatWithRobotPanel .row .buttonCover .button .checkbox:active + .knobs:before,
+body #viewOrderPanel .row .buttonCover .button .checkbox:active + .knobs:before {
+  width: 46px;
+  border-radius: 100px;
+}
+body #gestureControlPanel .row .buttonCover .button .checkbox:checked:active + .knobs:before,
+body #buttonControlPanel .row .buttonCover .button .checkbox:checked:active + .knobs:before,
+body #voiceControlPanel .row .buttonCover .button .checkbox:checked:active + .knobs:before,
+body #tableSelectionPanel .row .buttonCover .button .checkbox:checked:active + .knobs:before,
+body #chatWithRobotPanel .row .buttonCover .button .checkbox:checked:active + .knobs:before,
+body #viewOrderPanel .row .buttonCover .button .checkbox:checked:active + .knobs:before {
+  margin-left: -26px;
+}
+body #gestureControlPanel .row .buttonCover .button .checkbox:checked + .knobs:before,
+body #buttonControlPanel .row .buttonCover .button .checkbox:checked + .knobs:before,
+body #voiceControlPanel .row .buttonCover .button .checkbox:checked + .knobs:before,
+body #tableSelectionPanel .row .buttonCover .button .checkbox:checked + .knobs:before,
+body #chatWithRobotPanel .row .buttonCover .button .checkbox:checked + .knobs:before,
+body #viewOrderPanel .row .buttonCover .button .checkbox:checked + .knobs:before {
+  content: "ON";
+  left: 42px;
+  background-color: #03a9f4;
+}
+body #gestureControlPanel .row .buttonCover .button .checkbox:checked ~ .layer,
+body #buttonControlPanel .row .buttonCover .button .checkbox:checked ~ .layer,
+body #voiceControlPanel .row .buttonCover .button .checkbox:checked ~ .layer,
+body #tableSelectionPanel .row .buttonCover .button .checkbox:checked ~ .layer,
+body #chatWithRobotPanel .row .buttonCover .button .checkbox:checked ~ .layer,
+body #viewOrderPanel .row .buttonCover .button .checkbox:checked ~ .layer {
+  background-color: #ebf7fc;
+}
+body #gestureControlPanel .row .buttonCover,
+body #gestureControlPanel .row .knobs,
+body #gestureControlPanel .row .layer,
+body #buttonControlPanel .row .buttonCover,
+body #buttonControlPanel .row .knobs,
+body #buttonControlPanel .row .layer,
+body #voiceControlPanel .row .buttonCover,
+body #voiceControlPanel .row .knobs,
+body #voiceControlPanel .row .layer,
+body #tableSelectionPanel .row .buttonCover,
+body #tableSelectionPanel .row .knobs,
+body #tableSelectionPanel .row .layer,
+body #chatWithRobotPanel .row .buttonCover,
+body #chatWithRobotPanel .row .knobs,
+body #chatWithRobotPanel .row .layer,
+body #viewOrderPanel .row .buttonCover,
+body #viewOrderPanel .row .knobs,
+body #viewOrderPanel .row .layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+body #gestureControlPanel .row .txt2,
+body #buttonControlPanel .row .txt2,
+body #voiceControlPanel .row .txt2,
+body #tableSelectionPanel .row .txt2,
+body #chatWithRobotPanel .row .txt2,
+body #viewOrderPanel .row .txt2 {
+  color: #28a745;
+  font-family: "Google sans medium";
+  letter-spacing: 0.15px;
+  font-size: 18px;
+  font-size: 20px;
+}/*# sourceMappingURL=main.css.map */

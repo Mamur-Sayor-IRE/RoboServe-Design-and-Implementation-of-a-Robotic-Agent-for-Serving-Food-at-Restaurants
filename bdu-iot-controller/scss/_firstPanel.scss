@@ -1,0 +1,76 @@
+@use "./config/forward" as *;
+#firstPanel {
+    @include flex(ccr);
+    .xampp-configuration {
+        transform: translateY(-100px);
+        .xampp-icon {
+            @include flex(ccr);
+            gap: 12px;
+            margin-bottom: 48px;
+            img {
+                width: 40px;
+                height: auto;
+            }
+            .txt {
+                @include ff-gsm;
+                font-size: $fs-30;
+                color: $orange;
+            }
+        }
+        .inputbox {
+            position: relative;
+            margin-bottom: 48px;
+            label {
+                position: absolute;
+                top: 18px;
+                left: 10px;
+                background: transparent;
+                padding: 0 4px;
+                transition: all 0.1s ease-in-out;
+                pointer-events: none;
+                color: $placeholder;
+            } //label
+            input {
+                width: calc(100% - 22px);
+                padding: 18px 12px;
+                border: 1px solid $gray;
+                border-radius: 4px;
+                &[placeholder]::-webkit-input-placeholder {
+                    opacity: 0;
+                }
+                &[placeholder]:focus::-webkit-input-placeholder {
+                    opacity: 1;
+                    -webkit-transition: opacity 0.5s ease-in-out;
+                    -moz-transition: opacity 0.5s ease-in-out;
+                    transition: opacity 0.5s ease-in-out;
+                }
+                &:focus {
+                    border: 2px solid $orange;
+                    padding: 17px 11px;
+                    &+label {
+                        background: white;
+                        top: -10px;
+                        color: $orange;
+                        font-size: $fs-14;
+                    }
+                }
+                &:valid {
+                    &+label {
+                        background: white;
+                        top: -10px;
+                        font-size: $fs-14;
+                    }
+                }
+            } //input
+        } //.inputbox
+        .connect-btn {
+            .btn {
+                @include my-btn(o);
+                &.disable {
+                    @include my-btn(disable);
+                }
+            }
+            @include btn-loading;
+        }
+    } //.xampp-configuration
+} //#firstPanel

@@ -1,0 +1,54 @@
+<html>
+
+<body>
+    <div id="buttonControlPanel" class="fullWidthPanel">
+        <header>
+            <svg onclick="history.back()" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+                <path
+                    d="M480-157.37 157.37-480 480-802.63l47.978 47.739-240.586 240.826H802.63v68.13H287.392l240.586 240.587L480-157.37Z" />
+            </svg>
+            <div class="txt" onclick="window.location.reload()">Button control</div>
+        </header>
+        <div class="row">
+            <div class="txt">Control mode status : </div>
+            <div class="toggleButtonCover">
+                <div class="buttonCover">
+                    <div class="button">
+                        <input type="checkbox" class="checkbox" id="checkbox-for-manual-control">
+                        <div class="knobs"></div>
+                        <div class="layer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .row -->
+        <div class="row">
+            <div class="txt">Object's movement direction : </div>
+            <div class="txt2" id="result-for-manual-control">Stop</div>
+        </div>
+        <!-- .row -->
+        <div class="directions">
+            <p class="stop" ontouchstart='ButtonTouch("S")' ontouchend='ButtonTouch("S")'>STOP</p>
+            <svg class="up" ontouchstart='ButtonTouch("F")' ontouchend='ButtonTouch("S")' xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
+                <path
+                    d="M320 936V626H120l360-450 360 450H640v310H320Zm60-60h200V566h133L480 270 247 566h133v310Zm100-310Z" />
+            </svg>
+            <svg class="down" ontouchstart='ButtonTouch("B")' ontouchend='ButtonTouch("S")' xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
+                <path
+                    d="M320 936V626H120l360-450 360 450H640v310H320Zm60-60h200V566h133L480 270 247 566h133v310Zm100-310Z" />
+            </svg>
+            <svg class="right" ontouchstart='ButtonTouch("R")' ontouchend='ButtonTouch("S")' xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
+                <path
+                    d="M320 936V626H120l360-450 360 450H640v310H320Zm60-60h200V566h133L480 270 247 566h133v310Zm100-310Z" />
+            </svg>
+            <svg class="left" ontouchstart='ButtonTouch("L")' ontouchend='ButtonTouch("S")' xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
+                <path
+                    d="M320 936V626H120l360-450 360 450H640v310H320Zm60-60h200V566h133L480 270 247 566h133v310Zm100-310Z" />
+            </svg>
+        </div>
+        <!-- .directions -->
+    </div>
+    </div>
+</body>
+
+</html>

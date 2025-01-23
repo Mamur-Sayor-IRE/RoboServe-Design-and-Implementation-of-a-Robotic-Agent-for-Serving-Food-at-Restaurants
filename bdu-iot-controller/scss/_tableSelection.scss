@@ -1,0 +1,16 @@
+@use "./config/forward" as *;
+#tableSelectionPanel {
+    .tableContainer {
+        column-count: 2;
+        gap: 32px;
+        padding: 32px;
+        div {
+            @include flex(ccr);
+            width: 100%;
+            height: 100px;
+            background: $l-blue;
+            margin-bottom: 32px;
+            border-radius: 8px;
+        }
+    }
+}

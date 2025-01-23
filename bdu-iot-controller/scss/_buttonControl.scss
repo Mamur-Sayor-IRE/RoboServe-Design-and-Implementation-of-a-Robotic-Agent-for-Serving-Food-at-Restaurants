@@ -1,0 +1,57 @@
+@use "./config/forward" as *;
+#buttonControlPanel {
+    .directions {
+        width: 341px;
+        height: 336px;
+        overflow: hidden;
+        position: relative;
+        margin: 40px auto;
+        .stop {
+            @include absolute-center;
+            @include ff-gsm;
+            border: 3px solid black;
+            border-radius: 50%;
+            padding: 40px 24px;
+            width: fit-content;
+            font-size: 32px;
+            background: white;
+            &:hover {
+                color: $blue;
+                border-color: $blue;
+            }
+        }
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            &:hover {
+                fill: $blue;
+            }
+        }
+        .up {
+            top: 0;
+            left: 122px;
+        }
+        .down {
+            top: 236px;
+            left: 122px;
+            rotate: 180deg;
+        }
+        .right {
+            top: 118px;
+            left: 244px;
+            rotate: 90deg;
+            z-index: 2;
+            &:hover {
+                fill: $blue;
+            }
+        }
+        .left {
+            top: 118px;
+            left: 0;
+            rotate: -90deg;
+        }
+    }
+} //#buttonControlPanel

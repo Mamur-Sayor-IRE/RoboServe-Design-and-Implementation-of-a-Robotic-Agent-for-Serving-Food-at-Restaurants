@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "Heebo";
+    src: url("../res/font/Heebo.ttf");
+}
+
+@font-face {
+    font-family: "Arial";
+    src: url("../res/font/Arial.ttf");
+}
+
+@font-face {
+    font-family: "Product sans";
+    src: url("../res/font/Product-sans.ttf");
+}
+
+@font-face {
+    font-family: "Product sans light";
+    src: url("../res/font/Product-sans-light.ttf");
+}
+
+@font-face {
+    font-family: "Google sans";
+    src: url("../res/font/Google-sans.woff2");
+}
+
+@font-face {
+    font-family: "Google sans medium";
+    src: url("../res/font/Google-sans-medium.woff2");
+}
+
+@font-face {
+    font-family: "Segoe UI Variable Text";
+    src: url("../res/font/Segoe UI Variable Text.ttf");
+}
+
+@font-face {
+    font-family: "Segoe UI Variable Display";
+    src: url("../res/font/Segoe UI Variable Display.ttf");
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url("../res/font/Segoe UI.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../res/font/Roboto.ttf");
+}
+
+$font_family: "Heebo",
+"Arial",
+"Roboto",
+"Segoe UI Variable Text",
+"Segoe UI Variable Display",
+"Segoe UI";

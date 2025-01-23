@@ -1,0 +1,43 @@
+<html>
+
+<body>
+    <div id="firstPanel" class="fullWidthPanel">
+        <nav>
+            <img src="./res/img/other_img/bdu_logo.png" alt="bdu logo">
+            <p onclick="window.location.reload()">IOT Controller</p>
+        </nav>
+        <div class="xampp-configuration">
+            <div class="xampp-icon">
+                <img src="./res/img/other_img/xampp-icon.png" alt="xampp-icon">
+                <p class="txt">Xampp Configuration</p>
+            </div>
+            <div class="inputbox">
+                <input type="text" required autocomplete="off" spellcheck="false" placeholder="e.g. 192.168.242.22"
+                    id="ipAddressInputOfXamppConfigurationPanel">
+                <label>Local IP address</label>
+            </div>
+            <!-- inputbox -->
+            <div class="connect-btn">
+                <!-- <button class="btn disable">Connect now</button> -->
+                <button class="btn" id="btnConnectNowOfXamppConfigurationPanel"
+                    onclick="btnConnectNowOfXamppConfigurationPanel()">Connect now</button>
+                <button class="btn-loading" id="btnConnectNowLoadingOfXamppConfigurationPanel">
+                    <div class="c-preloader">
+                        <div class="loader">
+                            <svg class="circular-loader" viewBox="25 25 50 50">
+                                <circle class="loader-path" cx="50" cy="50" r="20"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                    Connecting...
+                </button>
+                <!-- .btn-loading -->
+
+            </div>
+        </div>
+        <!-- .xampp-configuration -->
+    </div>
+    <!-- #firstPanel -->
+</body>
+
+</html>
