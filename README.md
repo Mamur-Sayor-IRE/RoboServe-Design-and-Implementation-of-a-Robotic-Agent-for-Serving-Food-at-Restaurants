@@ -10,7 +10,7 @@ This project focuses on developing an IoT-driven robotic system to efficiently s
 ## Circuit Diagram
 Below is the circuit diagram of the project for a better understanding of the hardware setup:
 
-![Circuit Diagram](images/circuit-diagram.png)
+![Circuit Diagram](cir.PNG)
 
 ---
 
